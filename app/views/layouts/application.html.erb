@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsgirlsTest</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- 頁首 -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">The Idea app</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 內文 -->
+<div class="container">
+  <%= yield %>
+</div>
+
+<!-- 頁尾 -->
+<footer>
+  <div class="container">
+    <hr>
+    Rails Girls Taipei 2014<br>
+    Rails Girls 指南<br>
+    這些指南是給想了解技術並實現想法的女性的工具與社群。這裡可以學到怎麼辦活動，可以投稿新的教學文章，或只拿來學 Rails 也是完全沒問題的。想了解更多嗎？<br>
+    加入 Rails Girls 團隊的郵件列表。
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
